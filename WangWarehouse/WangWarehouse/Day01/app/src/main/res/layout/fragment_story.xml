@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.StoryFragment">
+    <com.youth.banner.Banner
+        android:id="@+id/ban"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </com.youth.banner.Banner>
+    <GridView
+        android:id="@+id/gv"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </GridView>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="今日推荐"
+        android:textSize="24dp"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+</LinearLayout>
